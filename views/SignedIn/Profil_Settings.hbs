@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <title>Ρυθμίσεις Προφίλ</title>
+  
+</head>
+
+<body style="background-color: rgb(197, 197, 197,0.7);">
+  <div class="header" id="header">
+    <div class="header-items" id="logo" >
+        <a href="/SignedIn/{{post.username}}">
+            <svg  width="80px" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path id="svg" fill="black" d="M436.932,218.203h-0.205c0.009-0.304,0.037-0.603,0.037-0.91l-1.236-7.933l9.604-9.603c1.34,0.841,2.911,1.347,4.608,1.347	c4.806,0,8.702-3.896,8.702-8.702v-11.298c0-4.807-3.896-8.702-8.702-8.702s-8.702,3.896-8.702,8.702v11.298c0,1.667,0.492,3.208,1.305,4.531l-7.57,7.57l-9.803-62.923c0-13.067-16.663-23.66-27.519-23.66H116.379c-10.854,0-27.518,10.593-27.518,23.66l-9.326,59.874l-7.272-7.271c0.813-1.323,1.305-2.864,1.305-4.531v-11.298c0-4.807-3.897-8.702-8.703-8.702c-4.805,0-8.702,3.896-8.702,8.702v11.298c0,4.807,3.897,8.702,8.702,8.702c1.698,0,3.269-0.506,4.609-1.347l9.304,9.304l-1.71,10.98c0,0.308,0.029,0.606,0.039,0.91h-2.038C38.398,218.203,16,251.011,16,291.485v20.151c0,26.175,12.441,39.938,31.145,46.404v26.878c0,5.06,4.101,9.16,9.16,9.16h71.451c5.06,0,9.16-4.101,9.16-9.16v-19.691l119.693,5.035l122.139-5.175v16.169c0,5.06,4.101,9.16,9.16,9.16h71.45c5.06,0,9.161-4.101,9.161-9.16v-24.613c16.644-6.967,27.48-20.582,27.48-45.007v-20.151C496,251.011,473.602,218.203,436.932,218.203z M100.275,141.391c0-9.18,15.531-16.623,25.649-16.623h261.984c10.117,0,25.649,7.443,25.649,16.623l10.992,53.197c0,9.181-8.203,16.624-18.321,16.624l-148.396,3.324l-150.229-3.324c-10.118,0-18.321-7.443-18.321-16.624L100.275,141.391z M122.941,321.201c0,0-24.875,42.848-78.843-19.128C-9.869,240.098,122.941,321.201,122.941,321.201z M309.579,355.639H204.255l-14.362-71.812h134.047L309.579,355.639zM469.736,302.073c-53.969,61.976-78.843,19.13-78.843,19.13S523.703,240.098,469.736,302.073z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="header-items">
+        <div class="nav justify-content-end">
+            <div class="dropdown" id="user" style="right:80px;">
+                <button class="dropbtn" >
+                    <svg  version="1.1" width="40px" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet">
+                        <g id="usersvg" transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)"
+                        fill="black" stroke="none">
+                        <path d="M4200 8990 c-514 -40 -974 -151 -1440 -347 -726 -306 -1390 -828
+                        -1866 -1468 -276 -371 -493 -778 -643 -1207 -179 -509 -263 -1053 -247 -1588
+                        18 -579 129 -1088 353 -1620 464 -1101 1383 -1999 2503 -2445 233 -93 594
+                        -198 820 -239 776 -140 1558 -80 2290 176 512 179 986 450 1410 804 126 104
+                        379 353 495 484 194 221 400 511 547 770 306 539 493 1135 560 1790 16 158 16
+                        648 0 800 -71 658 -245 1223 -541 1756 -489 877 -1253 1575 -2157 1969 -427
+                        186 -836 294 -1325 350 -162 19 -600 27 -759 15z m755 -385 c557 -60 1125
+                        -246 1605 -526 1159 -674 1919 -1850 2051 -3174 17 -167 17 -634 1 -795 -102
+                        -997 -549 -1901 -1275 -2578 l-122 -114 -7 124 c-50 840 -501 1604 -1239 2097
+                        -214 143 -394 233 -646 321 l-133 46 153 77 c175 89 294 174 422 302 267 267
+                        439 615 501 1012 24 158 22 413 -5 568 -64 366 -220 676 -471 939 -576 603
+                        -1499 729 -2206 300 -136 -82 -207 -138 -328 -254 -518 -500 -683 -1252 -419
+                        -1920 165 -420 480 -772 871 -971 l102 -52 -127 -42 c-176 -59 -267 -96 -413
+                        -170 -270 -138 -470 -284 -696 -510 -320 -319 -518 -640 -664 -1075 -64 -191
+                        -120 -520 -120 -703 l0 -88 -31 22 c-60 42 -335 324 -441 452 -524 630 -844
+                        1390 -929 2207 -17 158 -17 623 -1 795 72 758 363 1500 825 2105 726 949 1786
+                        1524 2987 1620 156 12 584 4 755 -15z"/>
+                        </g>
+                    </svg>
+                    <span id="Username">{{post.username}}</span>
+                </button>
+                <div class="dropdown-content">
+                  <a role="button" href="/SignedIn/{{post.username}}">Αρχική</a>
+                  <a role="button" href="/SignedIn/{{post.username}}/ReservationHistory">Επίβλεψη Κρατήσεων</a>
+                  <a role="button" href="/SignedIn/{{post.username}}/ProfilSettings">Ρυθμίσεις Προφίλ <span class="glyphicon glyphicon-cog"></span></a>
+                  <a role="button" href="/">Αποσύνδεση</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="row mb-4 ">
+      <div class="col ">
+        <h2>Ρυθμίσεις Προφίλ</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="personal_data">
+    <fieldset class="border p-4">
+      <legend class="w-auto px-3" style="font-size: 20px;margin-bottom:20px">Προσωπικά Στοιχεία:</legend>
+      <form>
+        <div class="row mb-3 align-items-center">
+          <div class="col-2 col-sm-2">
+            <p for="username" >Username:</p>
+          </div>
+          <div class="col-5 ">
+            <input type="text"  name="username" id="username" class="form-control" value="{{post.username}}" readonly>
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-2 col-sm-2">
+            <p for="password">Password:</p>
+          </div>
+          <div class="col">
+            <input type="password"  id="password" class="form-control" value="{{post.password}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" name="password" value="Αλλαγή Password"   data-toggle="modal" data-target="#PasswordDialog" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="fname">Όνομα:</p>
+          </div>
+          <div class="col">
+            <input type="text" id="fname" class="form-control" value="{{post.firstname}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Ονόματος" name="fname"  data-toggle="modal" data-target="#FnameDialog" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="lname">Επίθετο:</p>
+          </div>
+          <div class="col">
+            <input type="text" id="lname" class="form-control" value="{{post.lastname}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Επιθέτου" name="lname"   data-toggle="modal" data-target="#LnameDialog" >
+          </div>
+        </div>
+        <div class="row mb-3 ">
+          <div class="col-2 col-sm-2">
+            <p for="email">Email:</p>
+          </div>
+          <div class="col">
+            <input type="text"  id="email" class="form-control" value="{{post.email}}" readonly>
+          </div>
+          <div class="col">
+            <!-- <input type="button" value="Αλλαγή Email" name="email"    data-toggle="modal" data-target="#EmailDialog" > -->
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="phone">Τηλέφωνο:</p>
+          </div>
+          <div class="col">
+            <input type="text" id="phone" class="form-control" value="{{post.thl}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Τηλεφώνου" name="phone" data-toggle="modal" data-target="#PhoneDialog" >
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-2 col-sm-2">
+            <p for="adt">Α.Δ.Τ:</p>
+          </div>
+          <div class="col">
+            <input type="text" id="adt" class="form-control" value="{{post.adt}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Α.Δ.Τ"  name="adt"  data-toggle="modal" data-target="#AdtDialog" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="ar_diplomatos">Αριθμός Διπλώματος:</p>
+          </div>
+          <div class="col">
+            <input type="text" id="ar_diplomatos" class="form-control" value="{{post.ar_diplomatos}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Αρ. Διπλώματος" name="ar_diplomatos"  data-toggle="modal" data-target="#Ar_diplomatosDialog" >
+          </div>
+        </div>
+        <br>
+        <legend class="w-auto px-3" style="font-size: 20px;margin-bottom:20px">Διεύθυνση</legend>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="poli">Πόλη:</p>
+          </div>
+          <div class="col-5">
+            <input type="text" name="poli" id="poli" class="form-control" value="{{post.poli}}" readonly>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="odos">Οδός:</p>
+          </div>
+          <div class="col">
+            <input type="text" name="odos" id="odos" class="form-control" value="{{post.odos}}" readonly>
+          </div>
+          <div class="col">
+            <input type="button" class="changebuttons" value="Αλλαγή Διεύθυνσης"  data-toggle="modal" data-target="#AddressDialog" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="arithmos">Αριθμός:</p>
+          </div>
+          <div class="col-5">
+            <input type="text" name="arithmos" id="arithmos"  class="form-control" value="{{post.arithmos}}"  readonly>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2 col-sm-2">
+            <p for="tk">Τ.Κ:</p>
+          </div>
+          <div class="col-5">
+            <input type="text" name="tk" id="tk" class="form-control" value="{{post.TK}}"  readonly>
+          </div>
+        </div>
+      </form> 
+    </fieldset>
+  </div>
+
+<!-- ΑΛΛΑΓΗ ΚΩΔΙΚΟΥ -->
+<div class="modal fade" id="PasswordDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form id="ChangePasswordForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="PasswordDialogLabel">Αλλαγή Κωδικού Πρόσβασης</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέος Κωδικός</label>
+          <input type="text" id="newpassword" name="password" class= "form-control" onchange="able_to_save(0)" required>
+          <div id="newpass_check"  class="invalid-feedback">Δώστε νέο κωδικό πρόσβασης</div><br>
+          <label>Παλαιός Κωδικός</label>
+          <input type="text" id="oldpassword1" class="form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="ChangePassword()" data-dismiss="" >Save</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- ΑΛΛΑΓΗ ΟΝΟΜΑΤΟΣ -->
+<div class="modal fade" id="FnameDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form id="ChangeFnameForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="FnameDialogLabel">Αλλαγή Ονόματος</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Όνομα</label>
+          <input type="text" id="newfname" name="fname" class= "form-control" onchange="able_to_save(1)" required>
+          <div class="invalid-feedback">Δώστε νέο Όνομα</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword2" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="ChangeFname()">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- ΑΛΛΑΓΗ ΕΠΙΘΕΤΟΥ -->
+<div class="modal fade" id="LnameDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <form id="ChangeLnameForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="LnameDialogLabel">Αλλαγή Επιθέτου</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Επίθετο</label>
+          <input type="text" id="newlname" name="lname" class= "form-control" onchange="able_to_save(2)" required>
+          <div class="invalid-feedback">Δώστε νέο Επίθετο</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword3" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="ChangeLname()">Save</button>
+    </div>
+  </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- ΑΛΛΑΓΗ EMAIL -->
+<div class="modal fade" id="EmailDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <form id="ChangeEmailForm" method="POST">   
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="LnameDialogLabel">Αλλαγή Email</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Email</label>
+          <input type="text" id="newemail" name="email" class= "form-control" onchange="able_to_save(3)" required>
+          <div class="invalid-feedback">Δώστε νέο Email</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword4" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="ChangeEmail()">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- ΑΛΛΑΓΗ ΤΗΛΕΦΩΝΟΥ -->
+<div class="modal fade" id="PhoneDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <form id="ChangePhoneForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="PhoneDialogLabel">Αλλαγή Τηλεφώνου</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Τηλέφωνο</label>
+          <input type="text" id="newphone" name="phone" class= "form-control" pattern="^\d{3}-\d{3}-\d{4}$" onchange="able_to_save(4)" required>
+          <div class="invalid-feedback">Δώστε σωστό αριθμό τηλεφώνου</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword5" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="ChangePhone()">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- ΑΛΛΑΓΗ ΑΔΤ -->
+<div class="modal fade" id="AdtDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <form id="ChangeAdtForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="AdtDialogLabel">Αλλαγή Α.Δ.Τ</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Α.Δ.Τ.</label>
+          <input type="text" id="newadt" name="adt" class= "form-control"  onchange="able_to_save(5)" required>
+          <div class="invalid-feedback">Δώστε νέο Α.Δ.Τ.</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword6" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="Changeadt()">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- ΑΛΛΑΓΗ ΑΡΙΘΜΟΥ ΔΙΠΛΩΜΑΤΟΣ -->
+<div class="modal fade" id="Ar_diplomatosDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <form id="ChangeAr_DiplomatosForm" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="Ar_diplomatosLabel">Αλλαγή Αρ. Διπλώματος</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-items">
+          <label >Νέο Αρ. Διπλώματος</label>
+          <input type="text" id="newar_diplomatos" name="ar_diplomatos" class= "form-control" onchange="able_to_save(6)" required>
+          <div class="invalid-feedback">Ο αριθμός διπλώματος πρέπει να είναι 11 ψηφίων</div><br>
+          <label>Κωδικός</label>
+          <input type="text" id="oldpassword7" class= "form-control" required>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+        <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="Changear_diplomatos()">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- ΑΛΛΑΓΗ ΔΙΕΥΘΥΝΣΗΣ -->
+<div class="modal fade" id="AddressDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form id="ChangeDieythinsiForm" method="POST">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="AddressDialogLabel">Αλλαγή Διεύθυνσης</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-items">
+            <label >Νέα Πόλη</label>
+            <input type="text" id="newpoli" name="poli" class= "form-control" onchange="able_to_save(7)" required>
+            <label >Νέα Οδός</label>
+            <input type="text" id="newodos" name="odos" class= "form-control" onchange="able_to_save(7)" required>
+            <label >Νέος Αριθμός</label>
+            <input type="text" id="newarithmos" name="arithmos" class= "form-control" minlength="1" maxlength="3" onchange="able_to_save(7)" required>
+            <label >Νέος T.K</label>
+            <input type="text" id="newtk" name="tk" class= "form-control" minlength="5" maxlength="5" onchange="able_to_save(7)" required>
+            <div class="invalid-feedback">Δώστε έγκυρη διεύθυνση</div><br>
+            <label>Κωδικός</label>
+            <input type="text" id="oldpassword8" class= "form-control" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="saved">Οι αλλαγές σας αποθηκεύθηκαν.</div>
+            <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="save" data-dismiss="" onclick="ChangeAddress()">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

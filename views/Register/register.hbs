@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{#if message}}
+    <div class="container" id="welcome">
+        <div style="font-size: 23px;text-align: center;margin:10px">{{message}}</div>
+    </div>
+    {{/if}}
+   <div class="container">
+        <form id="RegistrationForm" action='/register' method="POST" >
+            <a href="/"><img src="/pictures/login.png" alt="log in" width="50" height="50"></a>
+            <h1>ΕΓΓΡΑΦΗ</h1><br>
+            <p>Εγγραφείτε σε λιγότερο από 5 λεπτά.</p>
+            <label for="username">Username</label><br>
+            <input type="text" placeholder="Username" name="username" id="username" minlength="5" maxlength="20" required><br>
+            <label for="psw">Password</label><br>
+            <input type="password" placeholder="Κωδικός" name="password" id="password" minlength="8" required><br>
+            <label for="psw-repeat">Repeat Password</label><br>
+            <input type="password" placeholder="Επανάληψη Κωδικού" name="password-repeat" id="password-repeat" required> <br>
+            <h2>Προσωπικά Στοιχεία</h2> <br>
+            <label for="firstname">Όνομα</label><br>
+            <input type="text" placeholder="Όνομα" name="firstname" id="firstname" minlength="5" required><br>
+            <label for="lastname">Επώνυμο</label><br>
+            <input type="text" placeholder="Επώνυμο" name="lastname" id="lastname" minlength="5" required><br>
+            <label for="adt">Αριθμός Δελτίου Ταυτότητας</label><br>
+            <input type="text" placeholder="ΑΔΤ" name="adt" id="adt" minlength="8" maxlength="8" required><br>
+            <label for="ar_diplomatos">Αριθμός Διπλώματος</label><br>
+            <input type="text" placeholder="Αριθμός Διπλώματος" name="ar_diplomatos" id="ar_diplomatos" minlength="11" maxlength="11" required><br>
+            <label for="phone">Τηλέφωνο</label><br>
+            <input type="tel" placeholder="Τηλέφωνο επικοινωνίας" name="phone" id="phone" pattern="^\[0-9]{10}$" minlength="10" maxlength="10" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+            <h2>Διεύθυνση</h2><br>
+            <label for="address">Πόλη</label><br>
+            <input type="text" placeholder="Πόλη" name="poli" id="poli" required><br>
+            <label for="address">Οδός</label><br>
+            <input type="text" placeholder="Οδός" name="odos" id="odos" required><br>
+            <label for="arithmos">Αριθμός</label><br>
+            <input type="text" placeholder="Αριθμός" name="arithmos" id="arithmos" minlength="1" maxlength="3" required><br>
+            <label for="tk">ΤΚ</label><br>
+            <input type="text" placeholder="Τ.Κ" name="tk" id="tk" minlength="5" maxlength="5" required><br>
+            <p>Με την εγγραφή σας συμγωνείτε με την <a href="#" style="color:dodgerblue">Πολιτική Απορρήτου</a>.</p>
+            <input type="submit" id="register-btn" value="ΕΓΓΡΑΦΗ" id="register">
+        </form>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+

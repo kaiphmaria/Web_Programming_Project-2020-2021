@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <title>Αρχική Χρήστη</title>
+  
+</head>
+
+<body>
+    <div class="container" id="welcome">
+        <div style="font-size: 23px;text-align: center;margin:10px">Καλώς Ήρθες</div>
+        <label id="username_lbl" >{{post.username}}</label>
+    </div>
+    <div class="header" id="header">
+        <div class="header-items" id="logo" >
+        <a href="/SignedIn/{{post.username}}">
+                <svg  width="80px" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path id="svg" fill="black" d="M436.932,218.203h-0.205c0.009-0.304,0.037-0.603,0.037-0.91l-1.236-7.933l9.604-9.603c1.34,0.841,2.911,1.347,4.608,1.347	c4.806,0,8.702-3.896,8.702-8.702v-11.298c0-4.807-3.896-8.702-8.702-8.702s-8.702,3.896-8.702,8.702v11.298c0,1.667,0.492,3.208,1.305,4.531l-7.57,7.57l-9.803-62.923c0-13.067-16.663-23.66-27.519-23.66H116.379c-10.854,0-27.518,10.593-27.518,23.66l-9.326,59.874l-7.272-7.271c0.813-1.323,1.305-2.864,1.305-4.531v-11.298c0-4.807-3.897-8.702-8.703-8.702c-4.805,0-8.702,3.896-8.702,8.702v11.298c0,4.807,3.897,8.702,8.702,8.702c1.698,0,3.269-0.506,4.609-1.347l9.304,9.304l-1.71,10.98c0,0.308,0.029,0.606,0.039,0.91h-2.038C38.398,218.203,16,251.011,16,291.485v20.151c0,26.175,12.441,39.938,31.145,46.404v26.878c0,5.06,4.101,9.16,9.16,9.16h71.451c5.06,0,9.16-4.101,9.16-9.16v-19.691l119.693,5.035l122.139-5.175v16.169c0,5.06,4.101,9.16,9.16,9.16h71.45c5.06,0,9.161-4.101,9.161-9.16v-24.613c16.644-6.967,27.48-20.582,27.48-45.007v-20.151C496,251.011,473.602,218.203,436.932,218.203z M100.275,141.391c0-9.18,15.531-16.623,25.649-16.623h261.984c10.117,0,25.649,7.443,25.649,16.623l10.992,53.197c0,9.181-8.203,16.624-18.321,16.624l-148.396,3.324l-150.229-3.324c-10.118,0-18.321-7.443-18.321-16.624L100.275,141.391z M122.941,321.201c0,0-24.875,42.848-78.843-19.128C-9.869,240.098,122.941,321.201,122.941,321.201z M309.579,355.639H204.255l-14.362-71.812h134.047L309.579,355.639zM469.736,302.073c-53.969,61.976-78.843,19.13-78.843,19.13S523.703,240.098,469.736,302.073z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="header-items">
+            <div class="nav justify-content-end">
+                <div class="dropdown" id="user" style="right:80px;">
+                    <button class="dropbtn" >
+                        <svg  version="1.1" width="40px" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet">
+                            <g id="usersvg" transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)"
+                            fill="black" stroke="none">
+                            <path d="M4200 8990 c-514 -40 -974 -151 -1440 -347 -726 -306 -1390 -828
+                            -1866 -1468 -276 -371 -493 -778 -643 -1207 -179 -509 -263 -1053 -247 -1588
+                            18 -579 129 -1088 353 -1620 464 -1101 1383 -1999 2503 -2445 233 -93 594
+                            -198 820 -239 776 -140 1558 -80 2290 176 512 179 986 450 1410 804 126 104
+                            379 353 495 484 194 221 400 511 547 770 306 539 493 1135 560 1790 16 158 16
+                            648 0 800 -71 658 -245 1223 -541 1756 -489 877 -1253 1575 -2157 1969 -427
+                            186 -836 294 -1325 350 -162 19 -600 27 -759 15z m755 -385 c557 -60 1125
+                            -246 1605 -526 1159 -674 1919 -1850 2051 -3174 17 -167 17 -634 1 -795 -102
+                            -997 -549 -1901 -1275 -2578 l-122 -114 -7 124 c-50 840 -501 1604 -1239 2097
+                            -214 143 -394 233 -646 321 l-133 46 153 77 c175 89 294 174 422 302 267 267
+                            439 615 501 1012 24 158 22 413 -5 568 -64 366 -220 676 -471 939 -576 603
+                            -1499 729 -2206 300 -136 -82 -207 -138 -328 -254 -518 -500 -683 -1252 -419
+                            -1920 165 -420 480 -772 871 -971 l102 -52 -127 -42 c-176 -59 -267 -96 -413
+                            -170 -270 -138 -470 -284 -696 -510 -320 -319 -518 -640 -664 -1075 -64 -191
+                            -120 -520 -120 -703 l0 -88 -31 22 c-60 42 -335 324 -441 452 -524 630 -844
+                            1390 -929 2207 -17 158 -17 623 -1 795 72 758 363 1500 825 2105 726 949 1786
+                            1524 2987 1620 156 12 584 4 755 -15z"/>
+                            </g>
+                        </svg>
+                        <span id="Username">{{post.username}}</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a role="button" href="/SignedIn/{{post.username}}">Αρχική</a>
+                        <a role="button" href="/SignedIn/{{post.username}}/ReservationHistory">Επίβλεψη Κρατήσεων</a>
+                        <a role="button" href="/SignedIn/{{post.username}}/ProfilSettings">Ρυθμίσεις Προφίλ <span class="glyphicon glyphicon-cog"></span></a>
+                        <a role="button" href="/">Αποσύνδεση</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(197, 197, 197,0.7);">
+        <!--SLIDESHOW-->
+        <div class="row justify-content-center" >
+            <div class="col">
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/electric_car1.jpg" alt="Los Angeles" style="width:100%;">
+                                <div class="carousel-caption ">
+                                    <h3 >ΟΔΗΓΟΥΜΕ ΗΛΕΚΤΡΙΚΑ</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/city_car.jpg" alt="Chicago" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>ΕΞΟΙΚΟΝΟΜΟΥΜΕ ΕΝΕΡΓΕΙΑ</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/many_cars.jpg" alt="New york" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3 >ΑΙΣΘΑΝΟΜΑΣΤΕ ΑΣΦΑΛΕΙΣ</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" >
+            <div class="col" style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top:10px;text-align:center;">
+                <p style="font-size:20px;margin-top:20px">ΟΙ ΚΑΛΥΤΕΡΕΣ ΠΡΟΣΦΟΡΕΣ</p>
+                <p>Για τις ημερομηνίες <span id="deals_date1"></span> ως <span id="deals_date2"></span></p>
+                <div class="top-deals">
+                    <div class="top-deals-list">
+                        <input type="radio" class="btn-check" name="options" id="option1" onclick="carousel_active(id)" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option1" style="font-size: 15px;">{{post.klaseis_oxhmatwn.type1}}</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option2" onclick="carousel_active(id)" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2" style="font-size: 15px;">{{post.klaseis_oxhmatwn.type2}}</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option3" onclick="carousel_active(id)" autocomplete="off" >
+                        <label class="btn btn-secondary" for="option3" style="font-size: 15px;">{{post.klaseis_oxhmatwn.type3}}</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option4" onclick="carousel_active(id)" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4" style="font-size: 15px;">{{post.klaseis_oxhmatwn.type4}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CarCarousel-container" id="city-cars-carousel">
+        <div id="CarCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" >
+                <div class="item active" >
+                    <div class="cars-list" id="slide1">
+                        {{#each  post.carousel11}}
+                        <form method="POST">
+                        <div class="cars-card" >
+                            <div class="img-container">
+                                <img name="car_img" src={{this.img}} alt="">
+                            </div>
+                            <p class="car-description" name="car_model">{{this.model}}</p>
+                            <p name="car_class">{{this.carclass}}</p><br>
+                            <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                        </div>
+                        </form>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cars-list" id="slide2">
+                        {{#each  post.carousel12}}
+                        <form method="POST">
+                        <div class="cars-card" >
+                            <div class="img-container">
+                                <img name="car_img" src={{this.img}} alt="">
+                            </div>
+                            <p class="car-description" name="car_model">{{this.model}}</p>
+                            <p name="car_class">{{this.carclass}}</p><br>
+                            <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                        </div>
+                        </form>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cars-list" id="slide3">
+                        {{#each  post.carousel13}}
+                        <form method="POST">
+                        <div class="cars-card" >
+                            <div class="img-container">
+                                <img name="car_img" src={{this.img}} alt="">
+                            </div>
+                            <p class="car-description" name="car_model">{{this.model}}</p>
+                            <p name="car_class">{{this.carclass}}</p><br>
+                            <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                        </div>
+                        </form>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#CarCarousel1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#CarCarousel1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <div class="CarCarousel-container" id="epaggelmatika-cars-carousel">
+            <div id="CarCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" >
+                    <div class="item active" >
+                        <div class="cars-list" id="slide1">
+                            {{#each  post.carousel21}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cars-list" id="slide2">
+                            {{#each  post.carousel22}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <div class="cars-list" id="slide3">
+                            {{#each  post.carousel23}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#CarCarousel2" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#CarCarousel2" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="CarCarousel-container" id="used-cars-carousel">
+            <div id="CarCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" id="carousel3" >
+                    <div class="item active" >
+                        <div class="cars-list" id="slide1">
+                            {{#each  post.carousel31}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cars-list" id="slide2">
+                            {{#each  post.carousel32}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cars-list" id="slide3">
+                            {{#each  post.carousel33}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#CarCarousel3" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#CarCarousel3" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="CarCarousel-container" id="lux-cars-carousel">
+            <div id="CarCarousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" id="carousel4" >
+                    <div class="item active">
+                        <div class="cars-list" id="slide1">
+                            {{#each  post.carousel41}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cars-list" id="slide2">
+                            {{#each  post.carousel42}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cars-list" id="slide3">
+                            {{#each  post.carousel43}}
+                            <form method="POST">
+                            <div class="cars-card" >
+                                <div class="img-container">
+                                    <img name="car_img" src={{this.img}} alt="">
+                                </div>
+                                <p class="car-description" name="car_model">{{this.model}}</p>
+                                <p name="car_class">{{this.carclass}}</p><br>
+                                <a class="car-selection-button">{{this.price}}€/μέρα</a><br>
+                            </div>
+                            </form>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#CarCarousel4" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#CarCarousel4" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="makeyourowncar">
+        <form id="Find_Car_Form" method="post" accept-charset="UTF-8" novalidate>
+            <p>ΕΝΟΙΚΙΑΣΗ ΑΥΤΟΚΙΝΗΤΟΥ</p>
+            <div class="box">
+                <div class="row mb-5 " style="margin:20px;">
+                    <div class="col "  >
+                        <div class="col ">
+                            <label for="date_paralavis" >Σταθμός Παραλαβής</label>
+                        </div>
+                        <div class="col ">
+                            <input list="stathmoi_paralavis" class="form-control" name="stathmos_par" id="stathmos_par" value="ΠΑΤΡΑ" required>
+                            <div class="invalid-feedback">Επιλέξτε σταθμό παραλαβής</div>
+                            <datalist id="stathmoi_paralavis">
+                            {{#each post.stathmoi}}
+                                <option value="{{this.perioxh}}">
+                            {{/each}}
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col  ">
+                        <div class="col">             
+                            <label for="date_epistrofis">Σταθμός Επιστροφής</label>
+                        </div>
+                        <div class="col">
+                            <input list="stathmoi_epistrofis"  class="form-control" name="stathmos_ep" id="stathmos_ep" value="ΠΑΤΡΑ" required>
+                            <div class="invalid-feedback">Επιλέξτε σταθμό επιστροφής</div>
+                            <datalist id="stathmoi_epistrofis">
+                                {{#each post.stathmoi}}
+                                    <option value="{{this.perioxh}}">
+                                {{/each}}
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <form id="findcarForm" action="/SignedIn/{{post.username}}/findcar" method="POST">
+                    <div class="row mb-5 " style="margin:20px;">
+                        <div class="col" >
+                            <div class="col ">
+                                <label for="date_paralavis">Ημερομηνία Παραλαβής</label>
+                            </div>
+                            <div class="col ">
+                                <div style="display: flex;flex-direction: row;" id="dates1">
+                                    <input type="date" id="date_paralavis" name="date_paralavis" value="" class= "form-control" style="margin-right: 15px;" required>                            
+                                    <input type="time" id="time1" class= "form-control" style="width:100%" value="10:00" required>
+                                </div>
+                                <div class="invalid-feedback" >Επιλέξτε έγκυρη ημερομηνία παραλαβής.</div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="col">             
+                                <label for="date_epistrofis">Ημερομηνία Επιστροφής</label>
+                            </div>
+                            <div class="col">
+                                <div style="display: flex;flex-direction: row;"  id="dates2">
+                                    <input type="date" id="date_epistrofis" name="date_epistrofis" value="" class= "form-control" style="margin-right: 15px;" required>                            
+                                    <input type="time" id="time2" class= "form-control" style="width:100%" value="10:00" required>
+                                </div>
+                                <div class="invalid-feedback">Επιλέξτε έγκυρη ημερομηνία επιστροφής.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top:20px">
+                        <div style="text-align:center;"><input type="submit" id="find_car-btn" class="btn btn-primary" value="Βρείτε αυτοκίνητο" style="border-color:rgb(190, 39, 39); background-color:rgb(255, 74, 74);width: 200px;"></div>
+                    </div>
+                    <div class="row mb-5 " style="margin:20px" id="divcheckbox1">
+                        <div  class="col " id="divcheckbox" >
+                            <input type="checkbox" id="age_checkbox" checked>
+                            <label for="age_checkbox">ΗΛΙΚΙΑ ΟΔΗΓΟΥ ΑΝΩ ΤΩΝ 25</label>
+                        </div>   
+                        <div id="age_input">
+                                <div class="age_input_header">
+                                    <button  class="bi bi-arrow-left" id="back_age-btn" onclick="hide_age_input()" style="color:white;border:none;background-color: transparent;"> &larr;</button>
+                                    <p style="color:white;font-size:15px;margin-left:10px;margin-top:15px">ΕΙΣΑΓΕΤΕ ΗΛΙΚΙΑ ΟΔΗΓΟΥ</p>
+                                </div>
+                                <div id="age_info">
+                                    <label style="margin-right:20px;margin-top:5px;color:white;font-size: 13px;">ΗΛΙΚΙΑ ΟΔΗΓΟΥ</label>
+                                    <input type="date" id="age" class="form-control " style="width:150px;" required>
+                                    <div class="invalid-feedback" id="age_alert">Δώστε ημερομηνία γέννησης</div>
+                                </div>
+                                <div class="insert_age">
+                                    <input type="button" onclick="insert_age()" value="Εισαγωγή">
+                                </div>
+                        </div>
+                        <div class="col" id="age_inserted">
+                            <label for="da">ΗΜΕΡΟΜΗΝΙΑ ΓΕΝΝΗΣΗΣ ΟΔΗΓΟΥ </label>
+                            <label id="age_field"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </form>
+        </div>
+        <div class="row " id="Contact-fullinfo">
+        <div class="col col-3">
+            <a  href="#" >
+                <svg id="svgdown" width="80px" fill="black" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path d="M436.932,218.203h-0.205c0.009-0.304,0.037-0.603,0.037-0.91l-1.236-7.933l9.604-9.603c1.34,0.841,2.911,1.347,4.608,1.347	c4.806,0,8.702-3.896,8.702-8.702v-11.298c0-4.807-3.896-8.702-8.702-8.702s-8.702,3.896-8.702,8.702v11.298c0,1.667,0.492,3.208,1.305,4.531l-7.57,7.57l-9.803-62.923c0-13.067-16.663-23.66-27.519-23.66H116.379c-10.854,0-27.518,10.593-27.518,23.66l-9.326,59.874l-7.272-7.271c0.813-1.323,1.305-2.864,1.305-4.531v-11.298c0-4.807-3.897-8.702-8.703-8.702c-4.805,0-8.702,3.896-8.702,8.702v11.298c0,4.807,3.897,8.702,8.702,8.702c1.698,0,3.269-0.506,4.609-1.347l9.304,9.304l-1.71,10.98c0,0.308,0.029,0.606,0.039,0.91h-2.038C38.398,218.203,16,251.011,16,291.485v20.151c0,26.175,12.441,39.938,31.145,46.404v26.878c0,5.06,4.101,9.16,9.16,9.16h71.451c5.06,0,9.16-4.101,9.16-9.16v-19.691l119.693,5.035l122.139-5.175v16.169c0,5.06,4.101,9.16,9.16,9.16h71.45c5.06,0,9.161-4.101,9.161-9.16v-24.613c16.644-6.967,27.48-20.582,27.48-45.007v-20.151C496,251.011,473.602,218.203,436.932,218.203z M100.275,141.391c0-9.18,15.531-16.623,25.649-16.623h261.984c10.117,0,25.649,7.443,25.649,16.623l10.992,53.197c0,9.181-8.203,16.624-18.321,16.624l-148.396,3.324l-150.229-3.324c-10.118,0-18.321-7.443-18.321-16.624L100.275,141.391z M122.941,321.201c0,0-24.875,42.848-78.843-19.128C-9.869,240.098,122.941,321.201,122.941,321.201z M309.579,355.639H204.255l-14.362-71.812h134.047L309.579,355.639zM469.736,302.073c-53.969,61.976-78.843,19.13-78.843,19.13S523.703,240.098,469.736,302.073z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="col col-3">
+            <h4>Πού θα μας βρείτε:</h4>
+            <label>Βασιλέως Γεωργίου 10, ΤΚ 15233, Χαλάνδρι.</label>
+        </div>
+        <div class="col col-3" id="contact-us">
+            <h4>Επικοινωνία</h4>
+            <label>Email: </label><label style="margin-left:5px;font-weight: bold;">contact@rentcars.gr</label><br>
+            <label>Τηλ: </label><label style="margin-left:5px;font-weight: bold;">210-2342234, 210-5342345</label><br>
+            <label>Fax: </label><label style="margin-left:5px;font-weight: bold;">+30 210234567</label>
+            
+        </div>
+        <div class="col col-3" id="stay_connected">
+            <h4>Stay connected</h4>
+            <div class="refer">
+            <a href="https://www.facebook.com/" target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="30px" viewBox="0 0 225.000000 225.000000"
+                preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+                fill="tomato" stroke="none">
+                <path d="M1292 2219 c-216 -28 -354 -148 -407 -354 -10 -41 -15 -108 -15 -217
+                l0 -158 -150 0 -150 0 2 -182 3 -183 148 -3 147 -3 0 -549 0 -550 220 0 220 0
+                0 550 0 550 160 0 c94 0 160 4 160 9 0 6 6 61 14 123 8 62 18 141 21 176 l7
+                62 -181 0 -181 0 0 140 c0 214 8 222 223 228 l137 4 0 184 0 184 -157 -1 c-87
+                -1 -186 -5 -221 -10z"/>
+                </g>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="40px" viewBox="0 0 220.000000 229.000000"
+                preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,229.000000) scale(0.100000,-0.100000)"
+                fill="tomato" stroke="none">
+                <path d="M675 2180 c-250 -19 -411 -113 -499 -291 -66 -134 -70 -176 -70 -694
+                0 -391 3 -472 17 -540 48 -230 202 -383 434 -432 65 -14 152 -17 538 -17 405
+                -1 470 1 545 17 180 38 313 134 384 278 67 137 70 166 70 694 0 526 -2 553
+                -69 693 -59 125 -180 224 -325 266 -30 9 -118 21 -195 26 -159 11 -679 11
+                -830 0z m960 -192 c144 -43 229 -132 266 -278 11 -43 14 -156 14 -515 0 -485
+                -3 -519 -47 -610 -26 -52 -93 -121 -143 -148 -87 -45 -129 -49 -552 -54 -577
+                -7 -664 6 -774 116 -105 104 -118 185 -118 696 0 495 14 588 108 688 70 75
+                148 107 296 121 22 2 234 2 470 1 345 -2 440 -5 480 -17z"/>
+                <path d="M1568 1823 c-39 -25 -62 -86 -48 -129 17 -51 63 -84 117 -84 38 0 50
+                5 79 34 29 29 34 41 34 81 0 40 -5 52 -34 81 -28 28 -41 34 -77 34 -24 0 -56
+                -8 -71 -17z"/>
+                <path d="M950 1681 c-91 -29 -142 -61 -211 -130 -101 -102 -148 -214 -149
+                -356 0 -173 86 -330 234 -427 83 -54 169 -78 275 -78 150 0 257 44 362 149
+                102 102 149 214 149 356 0 228 -148 424 -369 489 -74 22 -219 20 -291 -3z
+                m297 -192 c76 -36 135 -100 164 -178 31 -82 24 -196 -16 -269 -110 -203 -380
+                -238 -537 -71 -142 152 -108 402 70 506 103 61 210 65 319 12z"/>
+                </g>
+                </svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="40px" viewBox="0 0 840.000000 859.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,859.000000) scale(0.100000,-0.100000)"
+                fill="tomato" stroke="none">
+                <path d="M3970 8464 c-19 -2 -93 -9 -165 -15 -71 -6 -208 -24 -304 -40 -1742
+                -295 -3115 -1668 -3410 -3410 -43 -257 -56 -414 -56 -704 0 -290 13 -447 56
+                -704 157 -927 631 -1784 1332 -2407 669 -596 1496 -958 2387 -1046 174 -17
+                616 -17 790 0 1124 111 2153 665 2856 1538 511 636 822 1399 906 2224 17 164
+                17 619 0 790 -151 1536 -1118 2852 -2537 3453 -359 153 -766 258 -1170 303
+                -131 14 -607 27 -685 18z m645 -254 c1290 -138 2414 -888 3046 -2031 239 -433
+                391 -912 456 -1441 25 -201 25 -685 0 -886 -141 -1144 -720 -2117 -1653 -2780
+                -526 -374 -1192 -623 -1849 -692 -261 -27 -649 -23 -910 11 -1493 192 -2754
+                1228 -3231 2655 -91 272 -154 568 -186 864 -16 148 -16 622 0 770 117 1100
+                655 2068 1522 2736 572 441 1301 730 2002 794 62 5 131 12 153 14 73 7 548 -3
+                650 -14z"/>
+                <path d="M5205 6110 c-509 -72 -896 -489 -922 -992 -3 -60 -9 -108 -13 -108
+                -32 0 -287 54 -375 80 -437 127 -858 394 -1149 729 -49 56 -102 109 -117 117
+                -40 20 -95 17 -141 -8 -34 -19 -47 -38 -89 -123 -27 -55 -61 -145 -75 -200
+                -23 -87 -27 -121 -27 -255 -1 -194 20 -291 107 -492 6 -13 0 -20 -26 -31 -79
+                -33 -103 -100 -88 -246 25 -242 122 -454 289 -633 63 -68 68 -75 55 -93 -32
+                -43 -36 -90 -13 -157 32 -96 106 -230 176 -317 93 -117 193 -198 343 -280 l73
+                -39 -39 -20 c-122 -60 -314 -114 -494 -138 -96 -12 -165 -15 -296 -10 -166 6
+                -171 6 -204 -16 -52 -36 -72 -69 -72 -120 0 -88 26 -114 232 -228 669 -371
+                1519 -439 2265 -180 145 51 385 165 515 245 556 345 981 910 1174 1561 71 240
+                115 521 116 739 l0 100 41 30 c67 50 261 254 332 350 77 103 93 146 77 204
+                -19 70 -108 126 -171 106 -26 -9 -25 -5 17 95 39 92 42 155 12 200 -27 41 -80
+                70 -125 70 -20 0 -83 -25 -163 -65 -125 -63 -316 -135 -358 -135 -11 0 -54 25
+                -94 56 -75 56 -214 130 -302 159 -134 44 -341 64 -471 45z m345 -320 c108 -31
+                217 -91 315 -176 100 -85 125 -93 222 -71 38 8 69 14 71 12 2 -1 -13 -13 -32
+                -25 -75 -46 -101 -119 -68 -193 26 -58 61 -81 135 -87 l58 -5 -51 -38 c-84
+                -62 -90 -79 -90 -242 0 -471 -129 -932 -372 -1327 -195 -317 -475 -599 -790
+                -794 -572 -354 -1328 -448 -1997 -248 -45 14 -81 27 -79 30 3 2 61 19 129 38
+                241 67 449 167 647 313 111 82 134 151 81 239 -24 40 -76 61 -166 69 -134 11
+                -269 61 -383 138 -55 38 -170 154 -170 171 0 9 20 15 58 19 75 8 154 30 186
+                50 78 51 75 196 -4 245 -12 7 -60 24 -106 38 -160 46 -288 131 -390 258 -49
+                61 -113 178 -129 235 -7 21 -5 23 16 18 57 -16 198 -29 232 -23 84 16 139 104
+                117 185 -8 32 -28 54 -98 114 -108 91 -170 167 -221 271 -60 122 -75 190 -76
+                336 0 69 3 137 8 153 l7 27 108 -97 c346 -314 730 -524 1167 -638 178 -47 347
+                -75 490 -82 115 -5 122 -4 155 19 19 13 44 40 55 60 18 34 18 43 7 120 -25
+                173 -11 312 46 446 99 235 314 410 567 458 93 18 249 11 345 -16z"/>
+                </g>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

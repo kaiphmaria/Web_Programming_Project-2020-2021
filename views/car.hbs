@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <title>Βρες Αυτοκίνητο</title>
+  
+</head>
+
+<body>
+    {{#if post.message}}
+    <div class="container" id="welcome">
+        <div style="font-size: 23px;text-align: center;margin:10px">{{post.message}}</div>
+    </div>
+    {{/if}}
+    <div class="header" id="header">
+        <div class="header-items" id="logo" >
+            <a  href="/" >
+                <svg id="svg" width="70px" fill="black" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path d="M436.932,218.203h-0.205c0.009-0.304,0.037-0.603,0.037-0.91l-1.236-7.933l9.604-9.603c1.34,0.841,2.911,1.347,4.608,1.347	c4.806,0,8.702-3.896,8.702-8.702v-11.298c0-4.807-3.896-8.702-8.702-8.702s-8.702,3.896-8.702,8.702v11.298c0,1.667,0.492,3.208,1.305,4.531l-7.57,7.57l-9.803-62.923c0-13.067-16.663-23.66-27.519-23.66H116.379c-10.854,0-27.518,10.593-27.518,23.66l-9.326,59.874l-7.272-7.271c0.813-1.323,1.305-2.864,1.305-4.531v-11.298c0-4.807-3.897-8.702-8.703-8.702c-4.805,0-8.702,3.896-8.702,8.702v11.298c0,4.807,3.897,8.702,8.702,8.702c1.698,0,3.269-0.506,4.609-1.347l9.304,9.304l-1.71,10.98c0,0.308,0.029,0.606,0.039,0.91h-2.038C38.398,218.203,16,251.011,16,291.485v20.151c0,26.175,12.441,39.938,31.145,46.404v26.878c0,5.06,4.101,9.16,9.16,9.16h71.451c5.06,0,9.16-4.101,9.16-9.16v-19.691l119.693,5.035l122.139-5.175v16.169c0,5.06,4.101,9.16,9.16,9.16h71.45c5.06,0,9.161-4.101,9.161-9.16v-24.613c16.644-6.967,27.48-20.582,27.48-45.007v-20.151C496,251.011,473.602,218.203,436.932,218.203z M100.275,141.391c0-9.18,15.531-16.623,25.649-16.623h261.984c10.117,0,25.649,7.443,25.649,16.623l10.992,53.197c0,9.181-8.203,16.624-18.321,16.624l-148.396,3.324l-150.229-3.324c-10.118,0-18.321-7.443-18.321-16.624L100.275,141.391z M122.941,321.201c0,0-24.875,42.848-78.843-19.128C-9.869,240.098,122.941,321.201,122.941,321.201z M309.579,355.639H204.255l-14.362-71.812h134.047L309.579,355.639zM469.736,302.073c-53.969,61.976-78.843,19.13-78.843,19.13S523.703,240.098,469.736,302.073z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="header-items" id="header-details">
+            <p style="margin-right: 30px;"><img src="img/phone.png" style="width:33px;margin-right:5px;" for="phone" alt=""><label id="phone" name="phone">2610-654378</label></p>
+            <p ><img src="img/email.png" width="32px"  style="width:35px;margin-right:5px;" for="email" alt=""><label id="email" name="email">contact@rentcars.gr</label></p>
+        </div>
+        <div class="header-items">
+            <div id="MainMenu" class="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                <a href="/">ΑΡΧΙΚΗ</a>
+                <a href="paketa">ΠΑΚΕΤΑ</a>
+                <a href="yphresies">ΥΠΗΡΕΣΙΕΣ</a>
+                <a href="asfaleia">ΑΣΦΑΛΕΙΑ</a>
+                <a class="communication">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                <div class="communication-details"><label>Τηλ.</label><br>2610-654378<br><label>Email</label><br>contact@rentcars.gr</div>
+            </div>
+            <span id="menu-btn" onclick="openMenu()">&#9776; </span>            
+        </div>
+    </div>
+
+    <div class="row justify-content-center" id="car_row">
+        <div class="col col-6">
+            <div class="image_container">
+                <img src="{{post.step2.img}}" id="car_image" width="100%">
+            </div>
+        </div>
+        <div class="col col-6">
+            <div class="car_details_container">
+                <div class="model">{{post.step2.model}}</div>
+                 <div class="carclass_cont" style="display: inline-flex;">
+                    <p>Τύπος: </p>
+                    <div class="carclass">{{post.step2.carclass}}</div>
+                </div>
+                <div class="price_cont" style="display: inline-flex;">
+                    <p>Τιμή: </p>
+                    <div class="price">{{post.step2.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-space-between" style="margin-top: 50px;margin-left:90px">
+        <div class="col col-8">
+            <div class="alert alert-warning">
+                <strong>Δεν είστε συνδεδεμένος!</strong> Παρακαλώ εγγραφείτε στην παρακάτω φόρμα ή συνδεθείτε για να συνεχίσετε την κράτηση.
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top:50px">
+        <div class="col col-6" id="registration_box">
+            <form id="SingInForm" method="post" accept-charset="UTF-8" >
+                <fieldset>
+                    <legend style="font-size: 24px;">Σύνδεση</legend>
+                    <label for="username" class="username_lbl">Username</label><br>
+                    <input type="text" placeholder="Username" name="username1" id="username1" required><br>
+                    <div class="invalid-feedback">Δώστε username</div>
+                    <label for="psw">Password</label><br>
+                    <input type="password" placeholder="Κωδικός" name="password1" id="password1" required><br>
+                    <div class="invalid-feedback">Δώστε password</div>
+                    <input type="submit" value="ΣΥΝΔΕΣΗ" id="singin_btn" >
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top:50px">
+        <div class="col col-6" id="registration_box">
+            <form id="RegistrationForm" method="POST" >
+                <fieldset>
+                <legend style="font-size: 24px;">Εγγραφή</legend>
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="Username" name="username" id="username" minlength="5" maxlength="20" required><br>
+                <label for="psw">Password</label><br>
+                <input type="password" placeholder="Κωδικός" name="password" id="password" minlength="8" required><br>
+                <label for="psw-repeat">Repeat Password</label><br>
+                <input type="password" placeholder="Επανάληψη Κωδικού" name="password-repeat" id="password-repeat" required> <br>
+                <h2>Προσωπικά Στοιχεία</h2> <br>
+                <label for="firstname">Όνομα</label><br>
+                <input type="text" placeholder="Όνομα" name="firstname" id="firstname" minlength="5" required><br>
+                <label for="lastname">Επώνυμο</label><br>
+                <input type="text" placeholder="Επώνυμο" name="lastname" id="lastname" minlength="5" required><br>
+                <label for="adt">Αριθμός Δελτίου Ταυτότητας</label><br>
+                <input type="text" placeholder="ΑΔΤ" name="adt" id="adt" minlength="8" maxlength="8" required><br>
+                <label for="ar_diplomatos">Αριθμός Διπλώματος</label><br>
+                <input type="text" placeholder="Αριθμός Διπλώματος" name="ar_diplomatos" id="ar_diplomatos" minlength="11" maxlength="11" required><br>
+                <label for="phone">Τηλέφωνο</label><br>
+                <input type="tel" placeholder="Τηλέφωνο επικοινωνίας" name="phone" id="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+                <h2>Διεύθυνση</h2><br>
+                <label for="address">Πόλη</label><br>
+                <input type="text" placeholder="Πόλη" name="poli" id="poli" required><br>
+                <label for="address">Οδός</label><br>
+                <input type="text" placeholder="Οδός" name="odos" id="odos" required><br>
+                <label for="arithmos">Αριθμός</label><br>
+                <input type="text" placeholder="Αριθμός" name="arithmos" id="arithmos" minlength="1" maxlength="3" required><br>
+                <label for="tk">ΤΚ</label><br>
+                <input type="text" placeholder="Τ.Κ" name="tk" id="tk" minlength="5" maxlength="5" required><br>
+                <p>Με την εγγραφή σας συμγωνείτε με την <a href="#" style="color:dodgerblue">Πολιτική Απορρήτου</a>.</p>
+                <input type="submit" value="ΕΓΓΡΑΦΗ" id="register">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+</body>
