@@ -1,0 +1,330 @@
+#welcome{
+  display: flex;
+  flex-direction: column;
+  opacity:    1; 
+  width:      300px;
+  height:     100px; 
+  z-index:    10;
+  top:        15px; 
+  right:     200px; 
+  position:   fixed; 
+  background-color:rgb(255, 104, 66);
+  border-radius: 10px;
+}
+
+#username_lbl{
+  margin: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+html{
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.carousel-caption{
+  left:20px;
+  top:100px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  height:70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: stretch;
+  background-color: white;
+  z-index: 2;
+}
+
+#header-details{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  margin: 20px;
+  font-family:inherit;
+}
+
+#logo{
+  left: 40px;
+  position: fixed;
+  z-index: 10;
+}
+
+#user,#menu{
+  position: fixed;
+  z-index: 10;
+}
+
+.dropbtn {
+  background-color:transparent;
+  border: none;
+}
+
+.dropdown{
+  position: absolute;
+  top:20px;
+
+}
+
+.dropdown-content {
+  position: absolute;
+  margin:5px;
+  text-align: left;
+  top: 35px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+
+}
+.menu-content{
+  position:relative ;
+  background-color: white;
+  top:-53px;
+  z-index: 20;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+
+}
+
+.dropdown-content:active a{
+  width: 200px;
+  color: black;
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+  z-index: 20;
+}
+ .menu-content a{
+  width: 200px;
+  color: black;
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+  z-index: 20;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  right: 10px;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.communication-details{
+  padding: 8px 8px 8px 32px;
+  font-size: 15px;
+  display: none;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+#menu-btn{
+  position: absolute;
+  top:9px;
+  right: 30px;
+  font-size:40px;
+  cursor:pointer;
+}
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 1;
+  top: 50px;
+  visibility: visible;
+}
+
+#SingIn{
+  width:230px;
+}
+
+#div-submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#submit-btn{
+  background-color: green;
+  color:white;
+  border: white;
+  border-radius: 0.3pc;
+  width:100%;
+}
+#submit-btn:hover{background-color: rgb(3, 185, 3);}
+
+#svg-label{
+  color:black;
+  font-size: 15px;
+}
+#register-block{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+#register-btn{
+  
+  color: black;
+  border-color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height:45px;
+  width:100%;
+  border-radius: 5px;
+  background-color:rgb(255, 153, 0);
+  
+}
+
+#register-btn:hover{background-color: rgb(255, 100, 0);}
+
+.car_row{
+  margin:100px;
+  margin-top: 150px;
+  justify-content: space-evenly;
+}
+.image_container{
+  margin-top:120px;
+  margin-left: 100px;
+}
+.car_details_container{
+  font-size: 25px;
+  margin-top: 120px;
+  margin-left: 200px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+}
+.model{
+  font-size: 30px;
+}
+.carclass_cont,.price_cont{
+  margin-top:20px;
+}
+.carclass,.price{
+  margin-left: 10px;
+
+}
+.message_box{
+  padding: 10px;
+  font-size: 18px;
+  width:auto;
+  background-color: rgb(255, 138, 117);
+}
+
+input[type=text], input[type=password],input[type=email],input[type=tel]  {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;}
+  
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=tel]:focus {
+     background-color: #ddd;
+     outline: none;
+   }
+   
+.container{
+ margin-left: 20px;
+}
+
+#registration_box{
+  align-items: center;
+}
+fieldset{
+  text-align: center;
+}
+
+.username_lbl{
+  margin-top:30px;
+}
+
+label{
+  font-size: 17px;
+}
+#registr_btn{
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 10px;
+  width: 50%;
+  color: white;
+  border: 1px solid rgb(255, 149, 10);
+  background-color: rgb(255, 149, 10);
+}
+
+#registr_btn:hover{
+  border: 1px solid orange;
+  background-color: orange;
+}
+
+#singin_btn{
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 10px;
+  width: 50%;
+  color: white;
+  border: 1px solid rgb(100, 255, 10);
+  background-color: rgb(100, 255, 10);
+}
+
+#signin_btn:hover{
+  border: 1px solid rgb(190, 255, 10);
+  background-color: rgb(190, 255, 10);
+}

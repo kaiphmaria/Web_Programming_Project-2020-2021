@@ -1,0 +1,234 @@
+#welcome{
+    display: flex;
+    flex-direction: column;
+    opacity:    1; 
+    width:      300px;
+    height:     100px; 
+    z-index:    10;
+    top:        15px; 
+    right:     200px; 
+    position:   fixed; 
+    background-color:rgb(189, 255, 66);
+    border-radius: 10px;
+}
+#username_lbl{
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+html{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height:70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: stretch;
+    background-color: white;
+    z-index: 2;
+}
+
+#header-details{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 20px;
+    font-family:inherit;
+}
+
+#logo{
+    left: 40px;
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#user{
+    position: fixed;
+    z-index: 10;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 17px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #ddd;text-decoration: none;color: tomato;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { color:tomato; transition: 0.25s;}
+.dropdown:hover #usersvg { fill:tomato; transition: 0.25s;}
+
+
+#MyAccount{
+    width:200px;
+}
+
+#Username{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#refresh{
+    font-size: 17px;
+    margin-left: 8px;
+    background-color: tomato;
+    border: 1px solid tomato;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+}
+#refresh:hover{
+    text-decoration: none;
+    background-color: tomato;
+    border: 1px solid tomato;
+}
+
+#bottom_header{
+    margin-top:30px;
+  }
+#bottom_header .col{
+display: flex;
+text-align: left;
+justify-content: center baseline;
+
+}
+#bottom_info{
+display:flex;
+flex-direction:row;
+}
+#bottom_info .col-4{
+width: auto;
+}
+#bottom_info a{
+text-decoration: none;
+color: black;
+padding-right: 10px;
+font-size: 16px;
+}
+#bottom_info a:hover{
+text-decoration:rgb(94, 94, 94) ;
+color:rgb(94, 94, 94);
+}
+
+.container{
+    position: relative;
+    margin-top:100px;
+    text-align: left;
+}
+
+.table_container{
+    font-size: 15px;
+    margin-top:40px;
+    width: auto;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(168, 168, 168);
+
+}
+
+tbody tr:hover{
+    cursor: pointer;
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 5px;
+    background-color: rgb(150, 150, 150);    
+    transition: 0.5s;
+
+}
+
+.data_container{
+    font-size: 16px;
+    padding-left:10px;
+    display: inline-flex;
+    
+}
+.data_container p{
+    padding-left:10px
+}
+.data_container *{
+    margin-top: 10px;
+}
+.img_container{
+    width:auto
+}
+.img_container img{
+    width: 350px;
+}
+.modal-body-items h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.packet_data{
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#Yphresies, #Packets,.Sum_container,#Payment{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+.yphresia_data{
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: auto;
+}
+
+.Sum_container{
+    font-size: 19px;
+}
+
+.sum{
+    font-size: inherit;
+    margin-left: 20px;
+}
