@@ -27,7 +27,7 @@ const db = new sqlite3.Database(dbPath , (err) => {
 
 app.use(express.static('public'))
 
-app.engine('hbs', exphbs({extname: '.hbs'}))
+app.engine('hbs', exphbs.engine({extname: '.hbs'}))
 app.set('view engine', 'hbs');
 
 app.use(express.urlencoded({extended:true}))
